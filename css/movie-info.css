@@ -1,0 +1,281 @@
+@charset "UTF-8";
+* {
+  font-family: sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  background: #333333;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0 10px;
+  background-color: #262626;
+  position: relative;
+  z-index: 10000;
+}
+
+header button {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+header h1 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+#global-nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #262626;
+}
+
+#global-nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#global-nav ul li {
+  width: 50%;
+  list-style-type: none;
+  border-top: solid 1px #ffffff;
+  /* iPad */
+  padding-top: 18px;
+  /* iPad */
+}
+
+#global-nav ul li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  text-decoration: none;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+
+#global-nav ul li a i {
+  margin-right: 10px;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+#global-nav ul li:first-child {
+  border-right: solid 1px #ffffff;
+}
+
+/* Scss Document */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 90%;
+  color: white;
+  overflow: scroll;
+}
+
+.movie1 {
+  width: 100%;
+  height: 25%;
+  background-image: url("../img/movie02.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+#mvnm {
+  width: 90%;
+  padding: 10px 20px;
+  font-size: 35.2px;
+  font-size: 2.2rem;
+}
+
+#timeday {
+  width: 60%;
+  float: left;
+}
+
+.time_txt1 {
+  width: 90%;
+  margin-left: 20px;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.time_txt1 span {
+  margin-left: 10px;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+}
+
+.time_txt2 {
+  width: 90%;
+  margin-left: 20px;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.time_txt2 span {
+  margin-left: 10px;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+}
+
+#subtitles {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 25px;
+}
+
+#starbox {
+  width: 50px;
+  height: 70px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 200px;
+  text-align: center;
+  position: relative;
+  bottom: 15px;
+}
+
+#starbox input[type="checkbox"] {
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  display: block;
+  position: absolute;
+}
+
+#starbox input[type="checkbox"] + label {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/star.png) center center no-repeat;
+  cursor: pointer;
+}
+
+#starbox input[type="checkbox"]:checked + label, #starbox input[type="checkbox"]:active + label {
+  background: url("../img/starcolor.png") center center no-repeat;
+}
+
+#room_btn {
+  width: 100%;
+  margin-top: 70px;
+  border-top: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#room_btn p {
+  width: 50%;
+  height: 100px;
+}
+
+#room_btn p:first-child {
+  border-right: solid #fff 1px;
+}
+
+#room_btn p a {
+  display: block;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+#room_btn p a #surch {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: url("../img/サーチアイコン.png") no-repeat center center;
+}
+
+#room_btn p a #creation {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: url("../img/家のアイコン素材-2.png") no-repeat center center;
+}
+
+#description {
+  width: 100%;
+  height: 63%;
+  background: #262626;
+  clear: left;
+}
+
+#description div {
+  width: 95%;
+  background: #262626;
+  border-bottom: solid #4A4A4A 1px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+#description h3 {
+  width: 15%;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #707070;
+  float: left;
+  padding-left: 5%;
+}
+
+#description p {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #707070;
+  width: 77%;
+  padding-left: 3%;
+  float: left;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}

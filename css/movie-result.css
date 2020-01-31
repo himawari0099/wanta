@@ -1,0 +1,288 @@
+#sc_movie-result form {
+  height: 320px;
+  width: 100%;
+}
+
+#sc_movie-result main {
+  height: 85%;
+}
+
+#sc_movie-result #header {
+  width: 90%;
+  height: 64px;
+  margin: 0 auto;
+  padding: 18px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-color: #333333;
+}
+
+#sc_movie-result .movie02 {
+  width: 100%;
+  height: 138px;
+  background-image: url("../img/movie01.png");
+  background-position: center center;
+  background-size: cover;
+  background-color: #333;
+  position: relative;
+  z-index: 1;
+}
+
+#sc_movie-result .movie a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: absolute;
+}
+
+#sc_movie-result .movie01 {
+  width: 100%;
+  height: 152px;
+  background-image: url("../img/movie02.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+#sc_movie-result #search-area {
+  width: 80%;
+  height: 100%;
+  background: #fff;
+  border-radius: 50px;
+  float: left;
+}
+
+#sc_movie-result #header button {
+  width: 15%;
+  height: 100%;
+  background: #fff;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+#sc_movie-result #searchtxt {
+  width: 80%;
+  height: 100%;
+  margin-left: 30px;
+}
+
+#sc_movie-result #searchtxt input {
+  width: 100%;
+  height: 100%;
+}
+
+#sc_movie-result #search-inner {
+  position: relative;
+  height: 277px;
+  top: -330px;
+  transition: ease 0.5s;
+  background-color: #333333;
+}
+
+#sc_movie-result #genre-area {
+  width: 70%;
+  height: 100px;
+  margin: 20px auto;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+#sc_movie-result #genre-area > p {
+  width: 30%;
+}
+
+#sc_movie-result #genre-area > p > label {
+  width: 100%;
+  height: 25px;
+  display: block;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin-bottom: 7%;
+  line-height: 25px;
+}
+
+#sc_movie-result #genre-area > p:last-child {
+  width: 100%;
+  text-align: right;
+  margin-right: 5px;
+}
+
+#sc_movie-result .moltuto a:link, #sc_movie-result .moltuto a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#sc_movie-result #box {
+  width: 40%;
+  height: 100px;
+  float: left;
+  margin-left: 15%;
+}
+
+#sc_movie-result #schedule-area {
+  width: 100%;
+  height: 50%;
+  color: #fff;
+  margin: 0;
+}
+
+#sc_movie-result #schedule-area > select {
+  width: 80%;
+  height: 50%;
+  background: #fff no-repeat;
+  background-image: url("../img/arrow.png");
+  background-position: right 10px center;
+  color: black;
+  margin-top: 5px;
+  border-radius: 50px;
+}
+
+#sc_movie-result #order {
+  width: 100%;
+  height: 50%;
+  color: #fff;
+}
+
+#sc_movie-result #order > select {
+  width: 80%;
+  height: 50%;
+  background: #fff no-repeat;
+  background-image: url("../img/arrow.png");
+  background-position: right 10px center;
+  color: black;
+  margin-top: 5px;
+  border-radius: 50px;
+}
+
+#sc_movie-result #syousai {
+  color: #fff;
+  width: 40%;
+  height: 100%;
+  float: right;
+  margin-right: 5%;
+}
+
+#sc_movie-result #syousai input {
+  margin-top: 10px;
+}
+
+#sc_movie-result #btn_search {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  width: 50%;
+  height: 10%;
+  text-align: center;
+}
+
+#sc_movie-result #btn_search a {
+  border-radius: 2rem;
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #C30D23;
+  color: #fff;
+  text-decoration: none;
+}
+
+#sc_movie-result input[type=checkbox] {
+  display: none;
+}
+
+#sc_movie-result .grbox + label {
+  border: solid #ffffff 2px;
+}
+
+#sc_movie-result .grbox:checked + label {
+  border: solid #C30D23 2px;
+}
+
+#sc_movie-result .movie01 {
+  position: relative;
+  top: -257px;
+  transition: ease 0.5s;
+}
+
+#sc_movie-result #recommendedWrap {
+  width: 100%;
+  position: absolute;
+  top: 434px;
+  transition: ease 0.5s;
+}
+
+#sc_movie-result .recommended {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+  font-weight: bold;
+  background: #262626;
+  color: white;
+}
+
+#sc_movie-result #rcmd_btn {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+  color: white;
+  margin: 15px auto 0;
+}
+
+#sc_movie-result .rcmd_box {
+  width: 30%;
+  height: 100%;
+}
+
+#sc_movie-result #romancelmg {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #262626;
+  background-image: url("../img/haert.png");
+  background-position: center center;
+}
+
+#sc_movie-result #mysterylmg {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #262626;
+  background-image: url("../img/misteri.png");
+  background-position: center center;
+}
+
+#sc_movie-result #actionlmg {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #262626;
+  background-image: url("../img/action.png");
+  background-position: center center;
+}

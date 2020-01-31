@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Wanta</title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/room-search.css">
+<link rel="stylesheet" href="css/movie-search.css">
+<link rel="stylesheet" href="css/schedule.css">
+</head>
+<body>
+
+  <!-- ログイン画面 index -->
+  <div id="sc_login">
+    <header>
+      <button><img src="img/icon-logo.png" alt=""></button>
+      <h1>ログイン</h1>
+      <button></button>
+    </header>
+    <main>
+      <div id="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+      <form action="" name="login">
+        <p><input type="text" placeholder="メールアドレスを入力"></p>
+        <p><input type="text" placeholder="パスワードを入力"></p>
+        <button type="button" id="btn-login">ログイン</button>
+      </form>
+    </main>
+  </div>
+
+  <!-- 映画 movie-search -->
+  <div class="screen01" id="sc_movie-search">
+    <header>
+      <button><img src="img/icon-logo.png" alt=""></button>
+      <h1>検索</h1>
+      <button></button>
+    </header>
+    <main>
+      <div class="movie movie02">
+        <a href="#">
+          <p><span>最新映画</span><br>
+          今日の注目作品をチェック</p>
+        </a>
+      </div>
+      <form name="movie-search">
+      <div id="header">
+        <div id="search-area">
+        <p id="searchtxt">
+        <input type="search"  placeholder="映画名、ジャンル"></p>
+      </div>
+      <button type="button" id="btn-open">詳細検索</button>
+      </div>
+      <div id="search-inner">
+      <div id="genre-area">
+        <p>
+          <input class="grbox" type="checkbox" name="genre" value="1" id="genre1">
+          <label for="genre1">ラブコメディ</label>
+        </p>
+        <p>
+          <input class="grbox" type="checkbox" name="genre" value="1" id="genre2">
+          <label for="genre2">サスペンス</label>
+        </p>
+        <p>
+          <input class="grbox" type="checkbox" name="genre" value="1" id="genre3">
+          <label for="genre3">ミステリ</label>
+        </p>
+        <p>
+          <input class="grbox" type="checkbox" name="genre" value="1" id="genre4">
+          <label for="genre4">SF</label>
+        </p>
+        <p>
+          <input class="grbox" type="checkbox" name="genre" value="1" id="genre5">
+          <label for="genre5">ホラー</label>
+        </p>
+        <p>
+          <input class="grbox" type="checkbox" name="genre" value="1" id="genre6">
+          <label for="genre6">ドラマ</label>
+        </p>
+        <p>
+          <input class="grbox" type="checkbox" name="genre" value="1" id="genre7">
+          <label for="genre7">ファミリー</label>
+        </p>
+        <p>
+          <input class="grbox" type="checkbox" name="genre" value="1" id="genre8">
+          <label for="genre8">音楽</label>
+        </p>
+        <p>
+          <input class="grbox" type="checkbox" name="genre" value="1" id="genre9">
+          <label for="genre9">ロマンス</label>
+        </p>
+        <p class="moltuto"><a href="#">もっと表示</a></p>
+      </div>
+      <div id="box">
+        <div id="schedule-area">
+          <h2>上映時間</h2>
+          <select>
+          <option>---</option>
+          <option>30分~60分</option>
+          <option>60分~90分</option>
+          <option>90分~120分</option>
+          <option>120分~</option>
+          </select>
+      </div>
+        <div id="order">
+          <h2>表示順序</h2>
+          <select>
+          <option>評価が高い順</option>
+          <option>人気が高い順</option>
+          <option>最新順</option>
+          </select>
+        </div>
+      </div>
+      <div id="syousai">
+      <h2>詳細設定</h2>
+      <p>
+        <input type="radio">字幕ありの作品<br>
+        <input type="radio">吹き替えありの作品<br>
+        <input type="radio">無料作品のみ
+      </p>
+      </div>
+      <p id="btn_search"><a href="movie-result.html">この条件で検索</a></p>
+      </div>
+      </form>
+      <div class="movie movie01">
+      <a>
+          <p><span>タイムスケジュール</span><br>
+          今日の注目作品をチェック</p>
+      </a>
+      </div>
+      <div id="recommendedWrap">
+      <p class="recommended">あなたにオススメのジャンル</p>
+        <div id="rcmd_btn">
+        <p class="rcmd_box"><a href="#" id="romancelmg"></a><br>ラブロマンス</p>
+        <p class="rcmd_box"><a href="#" id="mysterylmg"></a><br>ミステリー</p>
+        <p class="rcmd_box"><a href="#" id="actionlmg"></a><br>アクション</p>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <!-- ＊movie-result > Jurassic-info -->
+  <!-- ＊schedule -->
+
+  <div class="screen02" id="sc_schedule">
+    <header>
+      <button id="btnTimeReturn"><img src="img/icon-return.png" alt=""></button>
+      <h1>タイムスケジュール</h1>
+      <button><img src="img/icon-menu.png" alt=""></button>
+    </header>
+    <main>
+
+      <ul class="movieslider">
+        <li><img src="img/movie01.png" alt=""></li>
+      </ul>
+
+      <div>
+        <ul class="scheduleList">
+          <li>１０：００</li>
+          <li>１１：００</li>
+          <li>１２：００</li>
+          <li>１３：００</li>
+          <li>１４：００</li>
+          <li>１５：００</li>
+          <li>１６：００</li>
+          <li>１７：００</li>
+          <li>１８：００</li>
+          <li>１９：００</li>
+          <li>２０：００</li>
+        </ul>
+
+        <ul class="movieList">
+          <li id="movieList01">
+            <p>１０：００〜１２：１０</p>
+            <h3>ハリーポッター</h3>
+            <span>字・吹</span>
+          </li>
+          <li id="movieList02">
+            <p>１２：３０〜１４：４５</p>
+            <h3>ヴェノム</h3>
+            <span>字・吹</span>
+          </li>
+          <li id="movieList03">
+            <p>１５：０５〜１６：０５</p>
+            <h3>スパイダーマン</h3>
+            <span>字・吹</span>
+          </li>
+          <li id="movieList04">
+            <p>１７：２０〜１９：１０</p>
+            <h3>ジュラシックワールド</h3>
+            <span>字・吹</span>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ルーム room-search -->
+  <div class="screen01" id="sc_room-search">
+    <header>
+      <button><img src="img/icon-logo.png" alt=""></button>
+      <h1>ルーム</h1>
+      <button></button>
+    </header>
+    <main>
+
+    </main>
+  </div>
+  <!-- ＊room-result > ??? -->
+  <!-- ＊room-create -->
+
+  <!-- 映画鑑賞画面 watch -->
+
+
+  <!-- フッター -->
+  <nav id="global-nav">
+    <ul>
+      <li><button id="btn-room"><img src="img/icon-search.png" alt=""><p>ルームを探す</p></button></li>
+      <li><button id="btn-movie"><img src="img/icon-movie.png" alt=""><p>映画を探す</p></button></li>
+    </ul>
+  </nav>
+  <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?5b49521a4774449c972b1df2e90393a3" charset="utf-8"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/wanta.js"></script>
+  <script src="js/movie-search.js"></script>
+</body>
+</html>

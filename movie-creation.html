@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Wanta | ルーム作成</title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/movie-creation.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+</head>
+<body>
+  <header>
+    <button><a href="mypage.html"><img src="img/icon-logo.png" alt=""></a></button>
+    <h1 class="room_result">ルーム作成</h1>
+    <button></button>
+  </header>
+  <main>
+	  <div id="header">
+      <div id="search-area">
+		  <p id="searchtxt">
+		  <input type="search" placeholder="ルーム名・ジャンル・映画名を入力"></p>
+	  </div>
+	  <button type="button" id="btn-open">閉じる</button>
+	  </div>
+	  <div id="genre-area">
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre1">
+			  <label for="genre1">ラブコメディ</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre2">
+			  <label for="genre2">サスペンス</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre3">
+			  <label for="genre3">ミステリ</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre4">
+			  <label for="genre4">SF</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre5">
+			  <label for="genre5">ホラー</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre6">
+			  <label for="genre6">ドラマ</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre7">
+			  <label for="genre7">ファミリー</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre8">
+			  <label for="genre8">音楽</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre9">
+			  <label for="genre9">ロマンス</label>
+		  </p>
+		 </div>
+		 <h3 class="tama">公開条件設定</h3>
+	  <div id="first_box">
+		 <select id="publish">
+		 	 <option>公開</option>
+			 <option>非公開</option>
+		 </select>
+	  </div>
+	  <div id="center_box" class="clear">
+		 <div class="box_float">
+		 <h4>性別</h4>
+		 <select>
+			 <option>--</option>
+		 	 <option>男性のみ</option>
+			 <option>女性のみ</option>
+		 </select>
+		 </div>
+		 <div class="box_float">
+		 <h4>年齢</h4>
+		 <select>
+		 	<option>--</option>
+			<option>10代</option>
+			<option>20代</option>
+			<option>30代</option>
+			<option>40代</option>
+			<option>50代</option>
+			<option>60代以上</option>
+		 </select>
+		 </div>
+	  </div>
+		 <div id="frend">
+		 <h4>フレンド限定</h4>
+		 <ul>
+		  <li><button type="button">ゆうき</button></li>
+			 <li><button type="button">ゆうき</button></li>
+			 <li><button type="button">ゆうき</button></li>
+			 <li><button type="button">ゆうき</button></li>
+			 <li><button type="button">新たに追加</button></li>
+		 </ul>
+		 </div>
+		 <h3 class="tama">開始時間設定</h3>
+	  <div id="tlme">
+		  <select>
+		  	<option>00:00~</option>
+			  <option>01:00~</option>
+			  <option>02:00~</option>
+			  <option>03:00~</option>
+			  <option>04:00~</option>
+			  <option>05:00~</option>
+			  <option>06:00~</option>
+			  <option>07:00~</option>
+			  <option>08:00~</option>
+			  <option>09:00~</option>
+			  <option>10:00~</option>
+			  <option>11:00~</option>
+			  <option>12:00~</option>
+			  <option>13:00~</option>
+			  <option>14:00~</option>
+			  <option>15:00~</option>
+			  <option>16:00~</option>
+			  <option>17:00~</option>
+			  <option>18:00~</option>
+			  <option>19:00~</option>
+			  <option>20:00~</option>
+			  <option>21:00~</option>
+			  <option>22:00~</option>
+			  <option>23:00~</option>
+		  </select>
+		</div>
+		  <h3 class="tama">ルーム名設定</h3>
+		  <p id="last_box">みかんスタジオ</p>
+	</main>
+  <nav id="global-nav">
+    <ul>
+      <li><a href="movie-search.html"><i class="fas fa-film"></i>映画を探す</a></li>
+      <li><a href="room-search.html"><i class="fas fa-search"></i>ルームを探す</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

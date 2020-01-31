@@ -1,0 +1,389 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  background: #333333;
+}
+*{
+  font-family: sans-serif;
+}
+
+/*共通*/
+header {
+  width: 100%;
+  height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0 10px;
+  background-color: #262626;
+  position: relative;
+  z-index: 10000;
+}
+
+header button {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+header h1 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+#global-nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  background: #262626;
+}
+
+#global-nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#global-nav ul li {
+  width: 50%;
+  list-style-type: none;
+  border-top: solid 1px #ffffff;
+  /* iPad */
+  padding-top: 18px;
+  /* iPad */
+}
+
+#global-nav ul li:first-child{
+  border-right: solid 1px #ffffff;
+}
+
+#global-nav ul li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  text-decoration: none;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+
+#global-nav ul li a i {
+  margin-right: 10px;
+  font-size: 32px;
+  font-size: 2rem;
+}
+/*共通*/
+
+main{
+  height: 86%;
+  overflow: scroll;
+  margin-bottom: 86px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+h1 {
+  color: #ffffff;
+  width: 100%;
+  padding:0 auto;
+
+}
+
+.room_result {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 8px;
+  font-size: 0.5rem;
+}
+
+#searchtext {
+  background-color: #ffffff;
+  width: 65%;
+  height: 20px;
+  padding-left: 10px;
+  border-radius: 50px;
+  border: none;
+  margin: 10px 10px;
+}
+
+#searchtext input {
+  width: 80%;
+  margin: 0px;
+  height: 20px;
+}
+
+#btn-open {
+  padding: 5px 5%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  height: 20px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  line-height: 1;
+}
+
+#search-area {
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 10px;
+}
+
+form[name="room_search"] {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 30px auto;
+}
+
+.box p {
+  margin: 4px 10px;
+}
+
+select[name="time"] {
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 10% 0 0 5%;
+  padding: 4px 10px;
+  width: 95%;
+}
+
+.main_01 {
+  padding-right: 5%;
+}
+
+.main_02 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.time {
+  margin: 5px 0;
+}
+
+select[name="open"] {
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 10% 0 0 5%;
+  padding: 4px 10px;
+}
+
+div {
+  margin: 0 auto;
+}
+
+.open_01 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+select[name="close"] {
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 10% 0 0 5%;
+  padding: 4px 10px;
+}
+
+h3 {
+  margin: 0 auto;
+}
+
+.subtitles {
+  color: #ffffff;
+  margin: 4px 10px;
+  padding: 4px 10px;
+}
+
+select[name="gender"] {
+  background-color: #ffffff;
+  width: 95%;
+  border-radius: 50px;
+  margin: 10% 0 0 5%;
+  padding: 4px 10px;
+}
+
+select[name="age"] {
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 0 0 0 5%;
+  padding: 4px 10px;
+  width: 95%;
+}
+
+.agein div {
+  margin: 0 auto;
+}
+
+.age {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+select[name="sort"] {
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 0 0 0 5%;
+  padding: 4px 10px;
+  width: 95%;
+}
+
+.soort div {
+  margin: 0 auto;
+}
+
+.sort {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.search {
+  background-color: #C30D23;
+  color: #ffffff;
+  border-radius: 50px;
+  width: 30%;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.6px;
+  font-size: 0.1rem;
+  margin: 60px auto 0 auto;
+}
+
+.main {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.genre > label {
+  border: solid 2px #ffffff;
+  background-color: #ffffff;
+  display: block;
+  padding: 5px 5px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.genre {
+  width: 25%;
+}
+
+.check + label {
+  border: solid 2px #ffffff;
+}
+
+.check:checked + label {
+  border: solid 2px #C30D23;
+}
+
+#content {
+  margin: 0 auto;
+}
+#content ul li{
+  padding-bottom: 24px;
+}
+
+.dinosaur {
+  text-align: center;
+}
+
+.dinosaur img {
+  display: block;
+  width: 100%;
+}
+
+.yoyaku {
+  color: #ffffff;
+  font-size: 10px;
+  white-space: nowrap;
+  margin-top: -50px;
+}
+
+.movie_name01{
+  padding-bottom: 20px;
+}
+
+.movie_name01 h3 {
+  font-size: 30px;
+  margin-top: 10px;
+
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.dinosaur_room01 p{
+  height: 20px;
+  display: flex;
+  font-size:20px;
+}
+
+.dinosaur_room {
+  width: 10%;
+  height: 20px;
+  text-align: center;
+  line-height: 2;
+  font-size: 10px;
+  color: #262626;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top:20px;
+}
+
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dinosaur_room01 {
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff;
+}

@@ -1,0 +1,467 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  background: #333333;
+}
+
+*{
+  font-family: sans-serif;
+}
+/*共通*/
+
+
+header {
+  width: 100%;
+  height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0 10px;
+  background-color: #262626;
+  position: fixed;
+  z-index: 10000;
+}
+
+header button {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+header h1 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+#global-nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  background: #262626;
+}
+
+#global-nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#global-nav ul li {
+  width: 50%;
+  list-style-type: none;
+  border-top: solid 1px #ffffff;
+  /* iPad */
+  padding-top: 18px;
+  /* iPad */
+}
+
+#global-nav ul li:first-child{
+  border-right: solid 1px #ffffff;
+}
+
+#global-nav ul li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+#global-nav ul li a i {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+/*共通*/
+main{
+  overflow: scroll;
+}
+
+header h2 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  background: #333333;
+}
+
+.genre input[type=checkbox] {
+  display: none;
+}
+
+h1 {
+  color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.room {
+  text-align: center;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+#searchtext {
+  background-color: #ffffff;
+  width: 65%;
+  height: 34px;
+  padding-left: 10px;
+  border-radius: 50px;
+  border: none;
+  margin: 10px 10px;
+}
+
+#searchtext input {
+  width: 80%;
+  margin: 0px;
+  height: 34px;
+}
+
+#btn-open {
+  width: 140px;
+  padding: 5px auto;
+  background-color: #ffffff;
+  border-radius: 50px;
+  height: 34px;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1;
+}
+
+#search-area {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #333;
+  position: relative;
+  z-index: 1;
+  font-size: 1.4rem;
+}
+
+form[name="room_search"] {
+  width: 100%;
+  position: relative;
+  top: 88px;
+}
+
+label{
+  font-size: 1.2rem;
+}
+.box {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 4px auto;
+}
+
+.box p {
+  margin: 4px 10px;
+}
+
+select[name="time"] {
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 0 0 0 5%;
+  padding: 4px 10px;
+  width: 95%;
+  font-size: 1rem;
+}
+
+.main_01 {
+  width: 100%;
+  padding-right: 5%;
+}
+
+.main_02 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+select[name="open"] {
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 0 0 0 5%;
+  padding: 4px 10px;
+  font-size: 1rem;
+}
+
+div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.open_01 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+select[name="close"] {
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 6% 0 0 5%;
+  padding: 4px 10px;
+  font-size: 1rem;
+}
+
+h3 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.subtitles {
+  color: #ffffff;
+  margin: 4px 10px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.subtitles input{
+
+}
+
+select[name="gender"] {
+  background-color: #ffffff;
+  width: 95%;
+  border-radius: 50px;
+  padding: 4px 10px;
+  font-size: 1rem;
+}
+
+select[name="age"] {
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 0 0 0 5%;
+  padding: 4px 10px;
+  width: 95%;
+  font-size: 1rem;
+}
+
+.agein div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.age {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+select[name="sort"] {
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 0 0 0 5%;
+  padding: 4px 10px;
+  width: 95%;
+  font-size: 1rem;
+}
+
+.soort div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sort {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.search a{
+  background-color: #C30D23;
+  color: #ffffff;
+  border-radius: 50px;
+  width: 30%;
+  padding: 5px;
+  text-align: center;
+  font-size: 1rem;
+  margin: 30px auto 0 auto;
+}
+
+.main {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main h2,.main h3{
+  margin: 20px 0 10px 0;
+}
+
+.genre > label {
+  border: solid 2px #ffffff;
+  background-color: #ffffff;
+  width: 100%;
+  display: block;
+  padding: 5px 5px;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.genre {
+  width: 25%;
+}
+
+.check + label {
+  border: solid 2px #ffffff;
+}
+
+.check:checked + label {
+  border: solid 2px #C30D23;
+}
+
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dinosaur {
+  text-align: center;
+}
+
+.dinosaur img {
+  display: block;
+  width: 100%;
+}
+
+.yoyaku {
+  color: #ffffff;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+#content button {
+  margin: 10px 0 0 30px;
+}
+
+/* iPad */
+#content ul li:last-child{
+  padding-bottom: 100px;
+}
+
+.movie_name01 h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.dinosaur_room {
+  width: 100%;
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.dinosaur_room01{
+  display: block;
+  margin-right:190px;
+  margin-top:-10px;
+}
+
+.dinosaur_room span {
+  width: 66%;
+  height: 30px;
+  text-align: center;
+  line-height: 2;
+  font-size: 1rem;
+  color: #262626;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin-right: 42px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dinosaur_room01 {
+  text-align: center;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+#search-inner{
+  border:solid 1px #333333;
+  position: relative;
+  height: 455px;
+  top: -644px;
+  transition: ease 0.5s;
+}
+
+#content{
+  position: relative;
+  height: 450px;
+  top:-360px;
+  transition: ease 0.5s;
+
+}
+
+#btnCreate{
+  position: absolute;
+  bottom: 120px;
+  right: 40px;
+}
+#btnCreate i{
+  font-size: 6rem;
+  color: #C30D23;
+  background-color: #ffffff;
+  border-radius: 50%;
+}

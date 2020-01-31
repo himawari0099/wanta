@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Wanta | ルームを探す </title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/room-search.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+</head>
+<body>
+  <header>
+    <button><a href="mypage.html"><img src="img/icon-logo.png" alt=""></a></button>
+    <h1 class="room">ルーム検索</h1>
+    <button></button>
+  </header>
+  <main>
+    <form name="room_search">
+    <div id="search-area">
+        <p id="searchtext"><input type="search"  placeholder="ルーム名・映画名・ジャンルを入力" id="searchtext2"></p>
+        <button type="button" id="btn-open">詳細検索</button>
+    </div>
+    <div id="search-inner">
+<div class="box">
+        <p class="genre">
+                <input type="checkbox" name="genre"value="1" id="gender01" class="check">
+                <label for="gender01">ジャンル１</label>
+        </p>
+        <p class="genre">
+                <input type="checkbox" name="genre"value="1" id="gender02" class="check">
+                <label for="gender02">ジャンル２</label>
+        </p>
+        <p class="genre">
+                <input type="checkbox" name="genre"value="1" id="gender03" class="check">
+                <label for="gender03">ジャンル３</label>
+        </p>
+        <p class="genre">
+                <input type="checkbox" name="genre"value="1" id="gender04" class="check">
+                <label for="gender04">ジャンル４</label>
+        </p>
+        <p class="genre">
+                <input type="checkbox" name="genre"value="1" id="gender05" class="check">
+                <label for="gender05">ジャンル５</label>
+        </p>
+        <p class="genre">
+                <input type="checkbox" name="genre"value="1" id="gender06" class="check">
+                <label for="gender06">ジャンル６</label>
+        </p>
+        <p class="genre">
+                <input type="checkbox" name="genre"value="1" id="gender07" class="check">
+                <label for="gender07">ジャンル７</label>
+        </p>
+        <p class="genre">
+                <input type="checkbox" name="genre"value="1" id="gender08" class="check">
+                <label for="gender08">ジャンル８</label>
+        </p>
+        <p class="genre">
+                <input type="checkbox" name="genre"value="1" id="gender09" class="check">
+                <label for="gender09">ジャンル９</label>
+        </p>
+
+
+</div>
+
+        <div class="main">
+                <div class="main_01">
+                        <h2 class="main_02">上映時間</h2>
+                                <div class="time">
+                                        <select name="time">
+                                                <option value="1">〜30分</option>
+                                                <option value="2">〜30分〜60分</option>
+                                                <option value="3">〜60分〜90分</option>
+                                                <option value="4">〜90分〜120分</option>
+                                                <option value="5">〜120分</option>
+                                        </select>
+                                </div>
+                        <h3>詳細設定</h3>
+                        <p class="subtitles">
+                                <input type="checkbox"name="subtitles"value="1"checked="checked">字幕ありの作品<br>
+
+                                <input type="checkbox"name="subtitles"value="2"checked="checked">吹き替えありの作品<br>
+
+                                <input type="checkbox"name="subtitles"value="3"checked="checked">無料作品のみ<br>
+                        </p>
+                              <div>
+                                <h3>性別</h3>
+                                <select name="gender">
+                                        <option value="1">男女問わない</option>
+                                        <option value="2">男性のみ</option>
+                                        <option value="3">女性のみ</option>
+                                  </select>
+                                </div>
+
+                </div>
+
+                <div class="room_open01">
+                        <div>
+                                <h2 class="open_01">ルーム開放時間</h2>
+
+                                <select name="open">
+                                        <option value="1">AM1:00</option>
+                                        <option value="2">AM2:00</option>
+                                        <option value="3">AM3:00</option>
+                                        <option value="4">AM4:00</option>
+                                        <option value="5">AM5:00</option>
+                                        <option value="6">AM6:00</option>
+                                        <option value="7">AM7:00</option>
+                                        <option value="8">AM8:00</option>
+                                        <option value="9">AM9:00</option>
+                                        <option value="10">AM10:00</option>
+                                        <option value="11">PM11:00</option>
+                                        <option value="12">PM12:00</option>
+                                        <option value="13">PM13:00</option>
+                                        <option value="14">PM14:00</option>
+                                        <option value="15">PM15:00</option>
+                                        <option value="16">PM16:00</option>
+                                        <option value="17">PM17:00</option>
+                                        <option value="18">PM18:00</option>
+                                        <option value="19">PM19:00</option>
+                                        <option value="20">PM20:00</option>
+                                        <option value="21">PM21:00</option>
+                                        <option value="22">PM22:00</option>
+                                        <option value="23">PM23:00</option>
+                                        <option value="0">PM24:00</option>
+
+                                </select>
+
+
+                                <select name="close">
+                                        <option value="1">AM1:00</option>
+                                        <option value="2">AM2:00</option>
+                                        <option value="3">AM3:00</option>
+                                        <option value="4">AM4:00</option>
+                                        <option value="5">AM5:00</option>
+                                        <option value="6">AM6:00</option>
+                                        <option value="7">AM7:00</option>
+                                        <option value="8">AM8:00</option>
+                                        <option value="9">AM9:00</option>
+                                        <option value="10">AM10:00</option>
+                                        <option value="11">PM11:00</option>
+                                        <option value="12">PM12:00</option>
+                                        <option value="13">PM13:00</option>
+                                        <option value="14">PM14:00</option>
+                                        <option value="15">PM15:00</option>
+                                        <option value="16">PM16:00</option>
+                                        <option value="17">PM17:00</option>
+                                        <option value="18">PM18:00</option>
+                                        <option value="19">PM19:00</option>
+                                        <option value="20">PM20:00</option>
+                                        <option value="21">PM21:00</option>
+                                        <option value="22">PM22:00</option>
+                                        <option value="23">PM23:00</option>
+                                        <option value="0">PM24:00</option>
+
+                                </select>
+
+                        </div>
+                        <div class="soort">
+                                <h3 class="sort">表示順序</h3>
+                                <select name="sort">
+                                        <option value="1">人気順</option>
+                                        <option value="2">評価高い順</option>
+                                        <option value="3">新作順</option>
+                                </select>
+                        </div>
+                        <div class="agein">
+
+                                <h3 class="agein">年齢</h3>
+                                <select name="age">
+                                        <option value="1">〜20代</option>
+                                        <option value="2">20代〜30代</option>
+                                        <option value="3">30代〜40代</option>
+                                        <option value="4">40代〜50代</option>
+                                        <option value="5">60代以上</option>
+                                </select>
+                        </div>
+
+
+
+                </div>
+        </div>
+        <p class="search"><a href="room-result.html">この条件で検索</a></p>
+
+    </form>
+        </div>
+
+
+
+
+    <div id="content">
+
+            <ul>
+                <li>
+                        <a href="#">
+                                <p class="dinosaur"><img src="img/movie01.png" alt="恐竜"></p>
+                                <div class="flex">
+                                        <button>
+                                                <p class="yoyaku">予約する</p>
+                                                <img src="img/yoyaku.png" alt="予約する">
+                                        </button>
+                                        <div class="movie_name01">
+                                                <h3>映画&emsp;ジュラシックワールド&emsp;炎の王国</h3>
+                                                <div class="dinosaur_room">
+                                                        <div class="dinosaur_room01">
+                                                                <p>ルーム名&emsp;恐竜が大好き</p>
+                                                                <p>上映時間&emsp;12:00~15:00</p>
+                                                        </div>
+                                                        <span>字・吹・女性のみ</span>
+                                                </div>
+                                       </div>
+                                </div>
+                        </a>
+
+
+                </li>
+                <li>
+                                <a href="#">
+                                        <p class="dinosaur"><img src="img/movie02.png" alt="ベェノム"></p>
+                                        <div class="flex">
+                                                <button>
+                                                        <p class="yoyaku">予約する</p>
+                                                        <img src="img/yoyaku.png" alt="予約する">
+                                                </button>
+                                                <div class="movie_name01">
+                                                        <h3>映画&emsp;ジュラシックワールド&emsp;炎の王国</h3>
+                                                        <div class="dinosaur_room">
+                                                                <div class="dinosaur_room01">
+                                                                        <p>ルーム名&emsp;恐竜が大好き</p>
+                                                                        <p>上映時間&emsp;12:00~15:00</p>
+                                                                </div>
+                                                                <span>字・吹・女性のみ</span>
+                                                        </div>
+                                               </div>
+                                        </div>
+                                </a>
+
+
+                        </li>
+
+
+
+            </ul>
+
+
+    </div>
+
+
+
+  </main>
+  <p id="btnCreate"><a href="movie-creation.html"><i class="fas fa-plus-circle"></i></a></p>
+
+  <nav id="global-nav">
+    <ul>
+      <li><a href="movie-search.html"><i class="fas fa-film"></i>映画を探す</a></li>
+      <li><a href="room-search.html"><i class="fas fa-search"></i>ルームを探す</a></li>
+    </ul>
+  </nav>
+  <script src="js/room_search.js"></script>
+</body>
+</html>

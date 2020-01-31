@@ -1,0 +1,167 @@
+* {
+  font-family: sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  background: #333333;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0 10px;
+  background-color: #262626;
+  position: relative;
+  z-index: 10000;
+}
+
+header button {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+header h1 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+#global-nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #262626;
+}
+
+#global-nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#global-nav ul li {
+  width: 50%;
+  list-style-type: none;
+  border-top: solid 1px #ffffff;
+  /* iPad */
+  padding-top: 18px;
+  /* iPad */
+}
+
+#global-nav ul li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  text-decoration: none;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+
+#global-nav ul li a i {
+  margin-right: 10px;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+#global-nav ul li:first-child {
+  border-right: solid 1px #ffffff;
+}
+
+main > div {
+  position: relative;
+}
+
+.movieslider li {
+  width: 100%;
+}
+
+.movieslider li img {
+  width: 100%;
+  height: 100%;
+}
+
+.scheduleList li {
+  padding-left: 6%;
+  border-bottom: solid 1px #212121;
+  line-height: 46px;
+  color: #ffffff;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+}
+
+.movieList li {
+  width: 70%;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  left: 22%;
+  background: #676767;
+  border-radius: 1.2rem;
+  text-align: center;
+  list-style-type: none;
+}
+
+.movieList li p {
+  padding-top: 8px;
+  color: #ffffff;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+}
+
+.movieList li h3 {
+  color: #ffffff;
+  font-weight: normal;
+  margin-bottom: 4px;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+
+.movieList li span {
+  padding: 2px 10px;
+  color: #333333;
+  background: #ffffff;
+  border-radius: 2rem;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+#movieList01 {
+  top: 14px;
+}
+
+#movieList02 {
+  top: 136px;
+  background: #C30D23;
+}
+
+#movieList03 {
+  top: 274px;
+}
+
+#movieList04 {
+  top: 396px;
+}

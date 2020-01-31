@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Wanta | 映画を探す</title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/movie-search.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+</head>
+<body>
+  <header>
+    <button><a href="mypage.html"><img src="img/icon-logo.png" alt=""></a></button>
+    <h1>映画一覧</h1>
+    <button></button>
+  </header>
+  <main>
+	  <div class="movie movie02">
+		  <a href="#">
+			  <p><span><strong>最新映画</strong></span><br>
+			  今日の注目作品をチェック</p>
+		  </a>
+	  </div>
+	  <form name="movie-search">
+	  <div id="header">
+      <div>
+        <div id="search-area">
+    		  <p id="searchtxt">
+    		  <input type="search"  placeholder="映画名、ジャンル"></p>
+  	    </div>
+    	  <button type="button" id="btn-open">詳細検索</button>
+      </div>
+	  </div>
+	  <div id="search-inner">
+	  <div id="genre-area">
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre1">
+			  <label for="genre1">ラブコメディ</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre2">
+			  <label for="genre2">サスペンス</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre3">
+			  <label for="genre3">ミステリ</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre4">
+			  <label for="genre4">SF</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre5">
+			  <label for="genre5">ホラー</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre6">
+			  <label for="genre6">ドラマ</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre7">
+			  <label for="genre7">ファミリー</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre8">
+			  <label for="genre8">音楽</label>
+		  </p>
+		  <p>
+			  <input class="grbox" type="checkbox" name="genre" value="1" id="genre9">
+			  <label for="genre9">ロマンス</label>
+		  </p>
+		  <p class="moltuto"><a href="#">もっと表示</a></p>
+	  </div>
+	  <div id="box">
+		  <div id="schedule-area">
+			  <h2>上映時間</h2>
+			  <select>
+				<option>---</option>
+				<option>30分~60分</option>
+				<option>60分~90分</option>
+				<option>90分~120分</option>
+				<option>120分~</option>
+			  </select>
+	  </div>
+		  <div id="order">
+			  <h2>表示順序</h2>
+			  <select>
+				<option>評価が高い順</option>
+				<option>人気が高い順</option>
+				<option>最新順</option>
+			  </select>
+		  </div>
+	  </div>
+	  <div id="syousai">
+	  <h2>詳細設定</h2>
+	  <p>
+		  <input type="radio">字幕ありの作品<br>
+		  <input type="radio">吹き替えありの作品<br>
+		  <input type="radio">無料作品のみ
+	  </p>
+	  </div>
+	  <a href="movie-result.html" id="btn_search">この条件で検索</a>
+	  </div>
+	  </form>
+	  <div class="movie movie01">
+		<a href="schedule.html">
+			  <p><span><strong>タイムスケジュール</strong></span><br>
+			  今日の注目作品をチェック</p>
+		</a>
+		<p class="recommended">あなたにオススメのジャンル</p>
+		  <div id="rcmd_btn">
+			<p class="rcmd_box"><a href="#" id="romancelmg"></a><br>ラブロマンス</p>
+			<p class="rcmd_box"><a href="#" id="mysterylmg"></a><br>ミステリー</p>
+			<p class="rcmd_box"><a href="#" id="actionlmg"></a><br>アクション</p>
+		  </div>
+	   </div>
+	</main>
+  <nav id="global-nav">
+    <ul>
+      <li><a href="movie-search.html"><i class="fas fa-film"></i>映画を探す</a></li>
+      <li><a href="room-search.html"><i class="fas fa-search"></i>ルームを探す</a></li>
+    </ul>
+  </nav>
+	<script src="js/movie-search.js"></script>
+</body>
+</html>

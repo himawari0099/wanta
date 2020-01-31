@@ -1,0 +1,291 @@
+* {
+  font-family: sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  background: #333333;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0 10px;
+  background-color: #262626;
+  position: relative;
+  z-index: 10000;
+}
+
+header button {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+header h1 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+#global-nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #262626;
+}
+
+#global-nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#global-nav ul li {
+  width: 50%;
+  list-style-type: none;
+  border-top: solid 1px #ffffff;
+  /* iPad */
+  padding-top: 18px;
+  /* iPad */
+}
+
+#global-nav ul li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  text-decoration: none;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+
+#global-nav ul li a i {
+  margin-right: 10px;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+#global-nav ul li:first-child {
+  border-right: solid 1px #ffffff;
+}
+
+.userBox {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.userBox p {
+  color: #fff;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+
+.userInfo h2 {
+  height: 50px;
+  padding-left: 30px;
+  line-height: 50px;
+  color: #ffffff;
+  background: #262626;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+}
+
+.movieList, .movieHistory {
+  width: 120%;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 4%;
+  overflow: hidden;
+  margin: 24px 0;
+}
+
+.movieList li, .movieHistory li {
+  width: 134px;
+  height: 170px;
+  margin: 0 14px;
+  background: #ffffff;
+  list-style-type: none;
+}
+
+.friendList {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 14px;
+}
+
+.friendList li {
+  width: 30%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 14px;
+}
+
+.friendList li img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 2rem;
+}
+
+.friendList li span {
+  display: block;
+  width: 70%;
+  color: #fff;
+  line-height: 40px;
+  padding-left: 8%;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+}
+
+.btnMoreWrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: 100%;
+  height: 40px;
+  background: #404040;
+  color: #ffffff;
+}
+
+.btnMoreWrap button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.btnMoreWrap button i {
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  margin-right: 4px;
+}
+
+.btnMoreWrap button span {
+  display: block;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+}
+
+.notification {
+  padding-bottom: 10px;
+}
+
+.notification li {
+  display: -ms-flexbox;
+  display: flex;
+  width: 94%;
+  padding: 8px 0% 6px 2%;
+  margin: 0 auto;
+  border-bottom: solid 1px #4A4A4A;
+  display: flex;
+}
+
+.notification li > div {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notification li > div:first-child {
+  width: 80%;
+}
+
+.notification li > div:first-child div {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.notification li > div:first-child > p {
+  width: 40px;
+  height: 40px;
+}
+
+.notification li > div:first-child > p img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 2rem;
+}
+
+.notification li > div p {
+  color: #ffffff;
+  width: 100%;
+}
+
+.notification li > div p:first-child {
+  padding: 6px 0 0 4px;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+}
+
+.notification li > div p:last-child {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.notification li > div:last-child p {
+  padding-right: 10%;
+}
+
+.fa-check-circle, .fa-times-circle {
+  margin-left: 10px;
+  font-size: 48px;
+  font-size: 3rem;
+}
+
+.fa-check-circle {
+  color: #C30D23;
+}
+
+.fa-times-circle {
+  color: #ffffff;
+}
+
+#sc_mypage {
+  width: 100%;
+  height: 100%;
+}
+
+#sc_mypage main {
+  height: 84%;
+  overflow: scroll;
+}
